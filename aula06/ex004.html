@@ -18,9 +18,14 @@
         var nome = prompt('Qual é seu nome?');
         document.write(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`);
         document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`);
-        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`);
-    </script>
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.<br>`);
 
-    <!-- AULA 07 INICIO -->
+        let idade = prompt("Qual sua idade?");
+        if (idade >= 18)
+            document.write(`Show! já é maior de idade.`);
+        else {
+            document.write(`${idade}, só?? Ainda é um bebezin!!`)
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body {
+            background: rgb(122, 104, 170);
+            color: white;
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <!-- árvore DOM
+        window 
+    location document history
+                html
+            head    body
+        meta title   h1 p p div
+                         strong
+
+    -->
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        // Selecionando: Por marca, por ID, por nome, por classe, por seletor
+        //Tagname, ID, Name, ClasseName, querySelector
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        // var d = document.getElementById('msg')
+        // d.style.background = 'green'
+        // d.innerText = 'Estou aguardando'
+        //window.document.getElementById('msg').innerText = 'Olá'
+        // var d = document.getElementsByName('msg')[0]
+        // d.innerText = 'Oi'
+        // window.document.getElementsByName('msg')[0].innerText = 'OLAAA CARAIO'
+        var d = window.document.querySelector('div#msg');
+        d.style.background = 'red'
+</script>
+</body>
+</html>

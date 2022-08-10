@@ -10,17 +10,18 @@
     <h1>Sistema de Multas</h1>
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
     <input type="button" value="Verificar" onclick="calcular()">
-
+    <div id="res"></div>
     <script>       
         function calcular() {
-        var txt = window.document.getElementById('txtvel');
-        var vel = Number(txt)
-        if (txt >= 60){
-            window.document.write('Ultrapassou o limite de velocidade. MULTADO!');
-        } else {
-            window.document.write('Bom garoto!')
-            }
+        var textovelocidade = document.querySelector('input#txtvel');
+        var res = document.querySelector('div#res');
+        var vel = Number(textovelocidade.value);
+        res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}</strong> km/h</p>`;
+        if (vel > 60){
+            res.innerHTML += `Você está <strong>MULTADO</strong>! Por excesso de velocidade`
         }
+        res.innerHTML += `<p>Dirija sempre com cinto de segurança</p>` 
+    }
 
         //22 minutos
     </script>

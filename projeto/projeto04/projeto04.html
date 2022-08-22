@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Projeto 03</title>
+    <title>Tabuada</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            <p>Início: <input type="number" id="inicio"></p>
-            <p>Fim: <input type="number" id="fim"></p>
-            <p>Passo: <input type="number" id="passo"></p>
-            <p><input type="button" value="Contar" onclick="contagem()"></p>
+            <p>Número: <input type="number" id="txtn">
+            <input type="button" value="Gerar Tabuada" id="gerarTabuada" onclick="tabuada()"></p>
         </div>
-        <div id="res">
-
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
         </div>
     </section>
     <footer>
@@ -27,4 +34,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
